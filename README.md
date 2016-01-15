@@ -8,6 +8,10 @@ This morphological analyzer use SVMs for wordsegmentation and part-of-speech tag
 - Python 2
 - [YamCha](http://chasen.org/~taku/software/yamcha/)
 
+## How to make model file
+
+...
+
 ## Usage
 
 ```sh
