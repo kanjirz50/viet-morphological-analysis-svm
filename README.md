@@ -7,6 +7,20 @@ This morphological analyzer use SVMs for wordsegmentation and part-of-speech tag
 
 - Python 2
 - [YamCha](http://chasen.org/~taku/software/yamcha/)
+- [model file](https://drive.google.com/file/d/0BxSyNdemluFBZ3A5X2ZOTEJKb1k/view?usp=sharing), download to `./models/vnPOS.model`
+
+## Usage
+
+```sh
+% git clone https://github.com/kanjirz50/viet-morphological-analysis-svm.git
+```
+
+Please download model file from [here](https://drive.google.com/file/d/0BxSyNdemluFBZ3A5X2ZOTEJKb1k/view?usp=sharing) to ./models/vnPOS.model
+
+```sh
+# running analyzer
+% python viet_morph_analyze.py < cat input_text.txt
+```
 
 ## How to make model file
 
@@ -28,10 +42,10 @@ Change format to IOB2 tag format.(Use only I tag and B tag.)
 % cat vnPOS.txt | python ./utils/vnPOS_to_iob2.py > vnPOS.iob2
 # Output likes below one.
 Tấp		B-JJ
-nập		I_JJ 
-sắm		B-VB 
-đtdđ	B-NN 
-đầu		B-NN 
+nập		I_JJ
+sắm		B-VB
+đtdđ	B-NN
+đầu		B-NN
 năm		B-NC
 
 ...
@@ -49,11 +63,4 @@ Training with YamCha
 
 # Training
 % make CORPUS=vnPOS.txt.rnd.train.iob2 MODEL=./model/vnPOS FEATURE="F:-2..2:0..0 T:-2..-1" train
-```
-
-
-## Usage
-
-```sh
-python viet_morph_analyze.py < cat input_text.txt
 ```
