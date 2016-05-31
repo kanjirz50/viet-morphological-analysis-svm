@@ -64,3 +64,6 @@ Training with YamCha
 # Training
 % make CORPUS=vnPOS.txt.rnd.train.iob2 MODEL=./model/vnPOS FEATURE="F:-2..2:0..0 T:-2..-1" train
 ```
+
+## License
+MIT
