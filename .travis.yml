@@ -1,0 +1,7 @@
+language: python
+python:
+  - "3.6"
+install:
+  - pip install scikit-learn logzero numpy scipy
+script:
+  - pytest
