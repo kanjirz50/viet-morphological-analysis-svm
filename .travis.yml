@@ -1,7 +1,7 @@
 language: python
 python:
   - "3.6"
-  - "nightly"
+install:
+  - pip install scikit-learn logzero
 script:
   - pytest
- 
