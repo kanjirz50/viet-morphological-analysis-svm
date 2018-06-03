@@ -60,3 +60,9 @@ target/
 
 # YamCha modelfile
 *.model
+
+.idea
+.python-version
+.ipynb_checkpoints
+
+work
