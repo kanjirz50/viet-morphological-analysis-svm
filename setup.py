@@ -12,7 +12,7 @@ setup(
     license="MIT",
     url="https://github.com/kanjirz50/viet-morphological-analysis-svm/",
     packages=find_packages(exclude=["contrib", "docs", "tests"]),
-    install_requires=["scikit-learn>=0.19", "logzero>=1.5", "pytest"],
+    install_requires=["scikit-learn>=0.19", "logzero>=1.5", "pytest", "numpy", "scipy"],
     dependency_links=[],
     python_requires='~=3.6',
     include_package_data=True,
