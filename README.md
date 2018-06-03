@@ -7,7 +7,7 @@
 
 SVMs based morphological analyzer for word segmentation and part-of-speech tagging.
 
-Old version(Python2 and YamCha) is [here](https://github.com/kanjirz50/viet-morphological-analysis-svm/releases/tag/0.1).
+Old version(Python2 and YamCha) is [here](https://github.com/kanjirz50/viet-morphological-analysis-svm/tree/0.1).
 
 ## Usage
 
